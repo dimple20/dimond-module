@@ -1,0 +1,63 @@
+// @import '@scss/_variable.scss';
+// @import '~assets/scss/_fonts.scss';
+
+
+// .floating-btn{
+//   z-index: 11;
+//   bottom:64px;
+//   // top:0;
+//   color: $white!important;
+//   background-color:$active-btn-yellow !important;
+//   border-color:$active-btn-yellow;
+//   // height: 47px;
+//   // width: 47px;
+//   .v-icon{
+//     font-size: 31px !important;
+//   }
+// }
+// bootstrapBtnPromise
+.spinner {
+  opacity: 1;
+  display: inline-block;
+  vertical-align: middle;
+  border: 4px solid $white;
+  border-top: 4px solid $loading-data;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  border-width: 9px;
+  animation: spin-data-v-cc3e8e04 1s linear infinite;
+  margin: 0 0 0 10px;
+  padding: 0;
+  transition: all 0.2s ease;
+}
+.show-spinner .hidden > .spinner {
+  opacity: 1 !important;
+  display: inline-block;
+  vertical-align: middle;
+  border: 4px solid $white;
+  border-top: 4px solid $loading-data;
+  border-radius: 50%;
+  width: 18px !important;
+  height: 18px !important;
+  border-width: 9px !important;
+  animation: spin-data-v-cc3e8e04 1s linear infinite;
+  margin: 0 0 0 10px !important;
+  padding: 0;
+  transition: all 0.2s ease;
+}
+.hidden-spinner .hidden > .spinner {
+  max-width: 0;
+  max-height: 0;
+  border-width: 0;
+  margin: 0;
+  opacity: 0;
+}
+@keyframes spin-data-v-cc3e8e04 {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
